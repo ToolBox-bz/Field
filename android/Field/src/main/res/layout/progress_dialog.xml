@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/progress_dialog" android:background="@drawable/dialog_box" android:visibility="visible" android:maxHeight="200.0dip" android:layout_alignParentBottom="true" style="@style/Wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/progressLayout" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" style="@style/Wrap">
+        <ProgressBar android:id="@+id/Progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="test" style="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+        <TextView android:id="@+id/progress_status" android:text="@string/already_visited" style="@style/ListSubTitleText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/shoplayout" android:padding="0.0dip" android:layout_below="@id/progressLayout" style="@style/FillWidth">
+        <TextView android:id="@+id/dialog_cancel" android:padding="20.0dip" android:paddingTop="0.0dip" android:text="@android:string/cancel" style="@style/ListTitleText" />
+    </LinearLayout>
+</RelativeLayout>

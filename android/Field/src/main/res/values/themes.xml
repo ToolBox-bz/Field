@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here.-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:actionBarSize">@dimen/action_bar_size</item>
+        <item name="android:backgroundStacked">@drawable/actionbar_stacked</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:backgroundStacked">@drawable/actionbar_stacked</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:actionBarTabTextStyle">@style/ActionBarText</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:color">@android:color/white</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="ActionBarTabBar" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+        <item name="android:background">@drawable/actionbar_tabbar</item>
+    </style>
+    <style name="ActionBarTabs" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tabs</item>
+    </style>
+
+    <style name="ActionBarText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:color">@android:color/white</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_details" style="@style/top">
+    <LinearLayout style="@style/v1" android:background="@drawable/box_square"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="@dimen/activity_vertical_margin">
+        <ImageView android:id="@+id/ProductDetailImage"
+            android:src="@drawable/logobox" android:visibility="gone"
+            style="@style/Match" android:scaleType="center"/>
+        <TextView android:id="@+id/ProductDetailName"
+            style="@style/ListTitleText" android:background="@drawable/divider_dark"
+            android:layout_width="match_parent"/>
+        <TextView android:id="@+id/ProductDetailType"
+            style="@style/ListSubTitleText" android:visibility="gone"
+            android:layout_width="match_parent" android:background="@drawable/divider_dark"/>
+        <TextView android:id="@+id/ProductDetailDesc"
+            style="@style/StdText" android:layout_width="match_parent"
+            android:background="@drawable/divider_dark"/>
+    </LinearLayout>
+</LinearLayout>

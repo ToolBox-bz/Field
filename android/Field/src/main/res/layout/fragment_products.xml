@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:baselineAligned="false" style="@style/top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@+id/exp_lv" android:layout_weight="20.0"
+        android:footerDividersEnabled="true" style="@style/FillWidth"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:divider="@null"/>
+    <ImageView android:src="@android:drawable/divider_horizontal_bright"
+        android:layout_weight="1.0" style="@style/FillWidth" />
+</LinearLayout>

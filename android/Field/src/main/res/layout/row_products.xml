@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/product_row"  style="@style/FillWidth"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical" android:gravity="center_vertical"
+    android:background="@drawable/box_square">
+    <LinearLayout android:id="@+id/picLayout" style="@style/Wrap"
+        android:background="@drawable/box_square">
+        <ImageView android:layout_gravity="center"
+            android:id="@+id/ProductPic" android:padding="1.0dip"
+            android:layout_height="80.0dip" android:layout_width="80dp"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/shoplayout"
+        android:padding="2.0dip" android:layout_marginLeft="15.0dip"
+        style="@style/FillWidth" android:layout_weight="1">
+        <TextView android:id="@+id/ProductName" style="@style/ListTitleText" />
+        <TextView android:id="@+id/ProductType" style="@style/ListSubTitleText" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/indicaterL" style="@style/Wrap">
+        <ImageView android:id="@+id/indicater"
+            android:layout_height="25dp" android:layout_width="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary theme colors -->
+    <color name="primary">#cc3300</color>
+    <color name="primaryDark">#bb2200</color>
+    <color name="primaryContrast">#FFEEEE</color>
+
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryDark">@color/primaryDark</color>
+    <color name="colorAccent">@color/primaryDark</color>
+    <!-- Primary theme colors end -->
+
+    <color name="bright_blue">#ff33b5e5</color>
+    <color name="dark_green">#5500ff00</color>
+
+    <color name="reddish_white">#ffffeeee</color>
+    <color name="tbx_blue">#ff0099ff</color>
+    <color name="very_bright_blue">#ff00ffff</color>
+
+</resources>

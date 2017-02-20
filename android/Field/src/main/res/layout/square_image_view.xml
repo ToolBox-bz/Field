@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <retailworks.in.field.utils.SquareImageView
+        style="@style/Fill"
+        android:id="@+id/picture"
+        android:background="@drawable/box_square"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_hotel_white_48dp"
+        android:scaleType="centerInside" />
+    <TextView
+        style="@style/PageTitleText"
+        android:background="@color/primaryDark"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/text"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:textColor="@android:color/white"/>
+</FrameLayout>

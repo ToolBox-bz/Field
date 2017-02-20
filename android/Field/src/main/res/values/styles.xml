@@ -1,0 +1,186 @@
+<resources>
+
+    <style name="BottomImage" parent="@style/Wrap">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:layout_margin">0.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="ButtonLayout" parent="@style/FillWidth">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_margin">2.0dip</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionBarSize">30.0dip</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabs</item>
+        <item name="android:actionBarTabBarStyle">@style/ActionBarTabBar</item>
+    </style>
+    <style name="ListEditText" parent="@style/FillWidth">
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ListSubTitleText" parent="@style/StdText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <style name="ListTitleText" parent="@style/StdText">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RadioBtnText" parent="ListTitleText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/divider_dark</item>
+        <item name="android:onClick">onRadioButtonClicked</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="LoginBoxText" parent="@style/ListSubTitleText" />
+
+
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="FillHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="FillWidth">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PageTitleLayout" parent="@style/FillWidth">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:layout_margin">0dip</item>
+        <item name="android:background">@drawable/box_top</item>
+        <item name="android:height">@dimen/action_bar_size</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+    <style name="PageTitleText" parent="FillWidth">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_marginTop">90dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/box_top</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:height">@dimen/action_bar_size</item>
+    </style>
+    <style name="DateText" parent="Match">
+        <item name="android:textSize">18dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="StdEditText" parent="@style/Wrap">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:maxWidth">120.0dip</item>
+        <item name="android:minWidth">100.0dip</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="StdText" parent="@style/Wrap">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TitleText" parent="StdText">
+        <item name="android:textSize">20dip</item>
+    </style>
+
+    <style name="AppTitleText" parent="TitleText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SubTitleText" parent="StdText">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:padding">0dip</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="StoreTextTitle" parent="@style/StdText">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@color/tbx_blue</item>
+        <item name="android:padding">1.0dip</item>
+    </style>
+    <style name="ToggleButton" parent="@style/Wrap">
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">120.0dip</item>
+        <item name="android:onClick">onToggleClicked</item>
+    </style>
+    <style name="VisitorEditText" parent="@style/StdText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@android:drawable/editbox_background_normal</item>
+    </style>
+    <style name="VisitorText" parent="@style/StdText">
+        <item name="android:textColor">@color/tbx_blue</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:minWidth">120.0dip</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="h1" parent="@style/Fill">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="top" parent="@style/Fill">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="v1" parent="@style/Fill">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_row"
+    style="@style/FillWidth" android:padding="10dp">
+        <TextView android:id="@+id/store_state" style="@style/ListTitleText"
+            android:textColor="@color/primaryDark"
+            android:layout_alignParentLeft="true"/>
+        <RadioButton android:id="@+id/store_rb" style="@style/Wrap"
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>
