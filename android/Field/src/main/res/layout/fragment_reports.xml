@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:background="@android:color/holo_orange_dark" android:padding="5.0dip" style="@style/FillWidth">
+        <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="left" android:layout_gravity="center" android:id="@+id/storeNameTitle" android:text="@string/emp_name" style="@style/Wrap" />
+    </FrameLayout>
+    <TableLayout android:padding="10.0dip" android:layout_marginTop="60.0dip" android:stretchColumns="1" style="@style/FillWidth">
+        <TableRow android:padding="0.0dip">
+            <TextView android:text="@string/reports_for" style="@style/StoreTextTitle" />
+            <Spinner android:id="@+id/report_spinner" style="@style/FillWidth" />
+        </TableRow>
+        <TableRow android:padding="0.0dip">
+            <TextView android:text="@string/store_visited" style="@style/StoreTextTitle" />
+            <TextView android:enabled="false" android:text="45/92" style="@style/StdText" />
+        </TableRow>
+        <TableRow android:padding="0.0dip">
+            <TextView android:text="@string/orders_booked" style="@style/StoreTextTitle" />
+            <TextView android:enabled="false" android:text="450" style="@style/StdText" />
+        </TableRow>
+        <TableRow android:padding="0.0dip">
+            <TextView android:text="@string/order_target" style="@style/StoreTextTitle" />
+            <TextView android:enabled="false" android:text="950" style="@style/StdText" />
+        </TableRow>
+        <TableRow android:padding="0.0dip">
+            <TextView android:text="@string/attendance" style="@style/StoreTextTitle" />
+            <TextView android:enabled="false" android:text="28/30" style="@style/StdText" />
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

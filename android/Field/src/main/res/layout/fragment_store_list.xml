@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:baselineAligned="false" style="@style/top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:id="@+id/PageHeader"
+        android:layout_alignParentTop="true" style="@style/PageTitleLayout"
+        android:layout_height="50dp">
+        <ImageView android:id="@+id/prevDay" android:src="@drawable/ic_menu_back"
+            android:layout_weight="1.0" style="@style/FillHeight" android:layout_height="50dp"/>
+        <TextView android:id="@+id/cycledate" android:text="@string/visit_day"
+            android:layout_weight="1.0" style="@style/DateText" />
+        <ImageView android:id="@+id/nxtDay" android:src="@drawable/ic_menu_forward"
+            android:layout_weight="1.0" style="@style/FillHeight" android:layout_height="50dp"/>
+    </LinearLayout>
+    <ListView android:id="@+id/store_lv" android:layout_weight="20.0"
+        android:layout_below="@id/PageHeader" style="@style/FillWidth"
+        android:scrollbars="none" android:divider="@null"/>
+    <TextView android:gravity="center" android:id="@+id/HolidayText" android:background="@drawable/box_square" android:padding="50.0dip" android:text="@string/no_calls_on_holiday" android:layout_centerInParent="true" style="@style/ListTitleText" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/storeActivity" style="@style/top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@+id/visitorTitle" android:background="@android:color/holo_blue_dark" android:padding="5.0dip" style="@style/FillWidth">
+        <TextView android:textSize="24.0dip" android:textStyle="bold" android:gravity="left" android:layout_gravity="center" android:id="@+id/storeNameTitle" android:text="@string/visitor_details" style="@style/Wrap" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_margin="5.0dip"
+        android:layout_weight="100.0" style="@style/Fill">
+        <LinearLayout style="@style/FillWidth">
+            <TextView android:text="@string/store_name" style="@style/VisitorText" />
+            <Spinner android:id="@+id/storeSpinner" style="@style/FillWidth" />
+        </LinearLayout>
+        <LinearLayout style="@style/FillWidth">
+            <TextView android:text="@string/visitor_co" style="@style/VisitorText" />
+            <Spinner android:id="@+id/coSpinner" style="@style/FillWidth" />
+        </LinearLayout>
+        <LinearLayout style="@style/FillWidth">
+            <TextView android:text="@string/visitor_emp_code" android:onClick="onClick" style="@style/VisitorText" />
+            <EditText android:id="@+id/empCode" android:minWidth="150.0dip" android:maxLength="8" style="@style/VisitorEditText" />
+            <Button android:id="@+id/empCodeGo" android:text="@string/go" android:onClick="onClick" style="@style/FillWidth" />
+        </LinearLayout>
+        <LinearLayout style="@style/FillWidth">
+            <TextView android:text="@string/emp_name" style="@style/VisitorText" />
+            <EditText android:enabled="false" android:id="@+id/empName" android:layout_width="fill_parent" style="@style/VisitorEditText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/Fill">
+            <LinearLayout android:orientation="vertical" style="@style/ButtonLayout">
+                <ImageButton android:id="@+id/visitorImageIn" android:padding="30.0dip" android:src="@android:drawable/ic_menu_camera" android:scaleType="fitXY" android:layout_weight="2.0" android:onClick="onClick" style="@style/Fill" />
+                <LinearLayout style="@style/FillWidth">
+                    <TextView android:minWidth="80.0dip" android:text="@string/time_in" style="@style/VisitorText" />
+                    <EditText android:enabled="false" android:id="@+id/timeIn" style="@style/VisitorEditText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_height="fill_parent" style="@style/ButtonLayout">
+                <ImageButton android:id="@+id/visitorImageOut" android:padding="30.0dip" android:src="@android:drawable/ic_menu_camera" android:scaleType="fitXY" android:layout_weight="2.0" android:onClick="onClick" style="@style/Fill" />
+                <LinearLayout style="@style/FillWidth">
+                    <TextView android:minWidth="80.0dip" android:text="@string/time_out" style="@style/VisitorText" />
+                    <EditText android:enabled="false" android:id="@+id/timeOut" style="@style/VisitorEditText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

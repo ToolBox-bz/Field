@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center"
+    android:id="@+id/fieldfrgment" style="@style/top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@+id/field_lv"  android:layout_margin="20.0dip"  style="@style/Match"/>
+</RelativeLayout>

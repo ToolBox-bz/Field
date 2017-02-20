@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="top" android:id="@+id/visitfragment"
+    android:baselineAligned="false" style="@style/top">
+  <ListView android:id="@+id/info_lv" style="@style/FillWidth" android:layout_below="@+id/pageTitle"
+      android:layout_marginTop="40.0dip" android:scrollbars="none" />
+</RelativeLayout>

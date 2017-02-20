@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/top">
+    <RadioGroup
+        style="@style/FillWidth"
+        android:orientation="vertical"
+        android:divider="@drawable/box"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layoutDirection="rtl"
+        android:id="@+id/radioGroup_status">
+        <RadioButton android:id="@+id/radio_open"
+            style="@style/RadioBtnText"
+            android:text="@string/store_open"/>
+        <RadioButton android:id="@+id/radio_closed"
+            style="@style/RadioBtnText"
+            android:text="@string/store_closed"/>
+        <RadioButton android:id="@+id/radio_notfnd"
+            style="@style/RadioBtnText"
+            android:text="@string/store_not_found"
+            />
+        <RadioButton android:id="@+id/radio_rejected"
+            style="@style/RadioBtnText"
+            android:text="@string/store_rejected"/>
+    </RadioGroup>
+
+    <ScrollView android:gravity="top" style="@style/top"
+        android:layout_below="@id/radioGroup_status">
+        <ImageView android:id="@+id/picthumb"
+            style="@style/FillWidth" android:visibility="visible"
+            android:minHeight="150dp" android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </ScrollView>
+</RelativeLayout>

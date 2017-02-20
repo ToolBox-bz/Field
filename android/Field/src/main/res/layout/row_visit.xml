@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/store_row" android:background="@drawable/box_square" android:maxHeight="150.0dip" style="@style/FillWidth"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_weight="2.0" style="@style/FillHeight">
+        <ImageView android:layout_gravity="center" android:id="@+id/ProductPic"
+            android:padding="1.0dip" android:src="@drawable/logobox"
+            android:scaleType="centerInside" android:minWidth="240.0dip"
+            style="@style/FillHeight" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ProductOuterlayout" android:padding="8.0dip" android:layout_weight="1.0" style="@style/FillWidth">
+        <TextView android:textSize="18.0dip" android:gravity="left" android:id="@+id/ProductName" android:layout_width="fill_parent" style="@style/ListTitleText" />
+        <LinearLayout style="@style/h1">
+            <LinearLayout android:gravity="center" android:id="@+id/shopOrders" android:layout_margin="2.0dip" style="@style/v1">
+                <TextView android:id="@+id/OrdersText" android:layout_width="fill_parent"
+                    android:text="@string/orders" style="@style/ListSubTitleText" />
+                <TextView android:id="@+id/LastOrderText" android:visibility="gone" style="@style/ListSubTitleText" />
+                <EditText android:id="@+id/OrdersEntry" style="@style/ListEditText"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/ProductInventory" android:layout_margin="2.0dip" style="@style/v1">
+                <TextView android:id="@+id/InventoryText" android:layout_width="fill_parent"
+                    android:text="@string/inventory" style="@style/ListSubTitleText" />
+                <TextView android:id="@+id/LastInventoryText" android:visibility="gone" style="@style/ListSubTitleText" />
+                <EditText android:id="@+id/InventoryEntry" style="@style/ListEditText"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:layout_gravity="top" android:paddingLeft="10.0dip" android:paddingTop="1.0dip" android:minHeight="60.0dip" style="@style/FillWidth"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/InfoHeading" style="@style/ListTitleText" />
+    <ImageView android:id="@+id/vComp" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:layout_alignParentRight="true" />
+    <TextView android:id="@+id/InfoValue" android:layout_below="@id/InfoHeading" style="@style/ListSubTitleText" />
+</RelativeLayout>

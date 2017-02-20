@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_submit" android:visible="false" android:menuCategory="system"
+        android:title="@string/submit" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_lock_power_off_alpha" android:id="@id/action_exit"
+        android:menuCategory="system" android:title="@string/logout" app:showAsAction="never" />
+</menu>
