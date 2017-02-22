@@ -58,17 +58,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     static abstract interface LoginStatus {
 
-        public static final int BAD_CONNECTION  = 0;
-        public static final int CONNECTING      = 10;
-        public static final int CONNECTED       = 20;
-        public static final int VERIFYING       = 30;
-        public static final int SUCCESS         = 40;
-        public static final int LOADING_CAllS   = 50;
-        public static final int LOADING_OUTLETS = 60;
-        public static final int LOADING_VISITS  = 70;
-        public static final int LOADING_PRODUCTS= 80;
-        public static final int LOADING_IMAGES  = 90;
-        public static final int BAD_CREDENTIALS = 100;
+        int BAD_CONNECTION  = 0;
+        int CONNECTING      = 10;
+        int CONNECTED       = 20;
+        int VERIFYING       = 30;
+        int SUCCESS         = 40;
+        int LOADING_CAllS   = 50;
+        int LOADING_OUTLETS = 60;
+        int LOADING_VISITS  = 70;
+        int LOADING_PRODUCTS= 80;
+        int LOADING_IMAGES  = 90;
+        int BAD_CREDENTIALS = 100;
     }
 
     @Override
